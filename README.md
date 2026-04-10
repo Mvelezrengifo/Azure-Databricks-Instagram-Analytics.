@@ -1,20 +1,46 @@
-# Azure-Databricks-Instagram-Analytics.
-# 📊 Análisis de Datos de Instagram - Arquitectura Medallion
+📊 Instagram Analytics con Azure Databricks
+Proyecto de Ingeniería de Datos que implementa una arquitectura Medallion (Bronce → Plata → Oro) en Azure Databricks, procesando más de 1.5 millones de registros sobre el uso de Instagram.
 
-Este proyecto demuestra una implementación profesional de Ingeniería de Datos utilizando **Azure Databricks** para procesar y analizar un dataset de **1.5 millones de registros** sobre el uso de Instagram.
+🏗️ Arquitectura de Datos (Medallion)
+🥉 Bronce (Raw) → ingesta de datos brutos desde archivos CSV.
 
-## 🏗️ Arquitectura de Datos (Medallion)
-Implementamos una estructura de tres capas para garantizar la calidad y seguridad de los datos:
+🥈 Plata (Silver) → limpieza, manejo de nulos y estandarización de tipos.
 
-* **Capa Bronce (Raw):** Ingesta de datos brutos desde archivos CSV.
-* **Capa Plata (Silver):** Limpieza de datos, manejo de nulos y estandarización de tipos.
-* **Capa Oro (Gold):** Agregaciones estratégicas para métricas de negocio (Uso promedio por género, localización y nivel de satisfacción).
+🥇 Oro (Gold) → agregaciones estratégicas para métricas de negocio:
 
-## 🛡️ Gobernanza y Seguridad
-Se implementó una capa de **Gobernanza de Datos** mediante el uso de **Vistas (Views)**, permitiendo que los analistas accedan a los resultados finales sin exponer la lógica de procesamiento ni datos sensibles del backend.
+Uso promedio por género.
 
-## 🛠️ Tecnologías Utilizadas
-* **Azure Databricks**
-* **PySpark / Spark SQL**
-* **Git & GitHub**
-* **Delta Lake**
+Localización geográfica.
+
+Nivel de satisfacción de usuarios.
+
+🛡️ Gobernanza y Seguridad
+Implementación de Data Governance mediante Views.
+
+Los analistas acceden a resultados finales sin exponer lógica interna ni datos sensibles.
+
+Principio de mínimo privilegio aplicado en accesos.
+
+🛠️ Tecnologías Utilizadas
+Azure Databricks
+
+PySpark / Spark SQL
+
+Delta Lake
+
+Git & GitHub
+
+📊 Resultados
+Procesamiento distribuido de 1.5M registros.
+
+Métricas de negocio listas para análisis en capa Oro.
+
+Arquitectura reproducible y portable a entornos enterprise.
+
+👤 Autor
+Mauricio Vélez Rengifo  
+Ingeniero de Datos | Desarrollador Backend
+
+GitHub: Mvelezrengifo
+
+LinkedIn: Mauricio Vélez
